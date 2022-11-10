@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки на работу </title>
+</head>
+<body>
+<h1>Анкета</h1>
+<p><i>Ответьте, пожалуйста, на вопросы ниже</i></p>
+<form action="#" method="post" enctype="multipart/form-data">
+<div>
+    <p>Имя</p>
+    <input tabindex="1" required type="text" name="username" placeholder="Имя">
+</div>
+<div>
+    <p>Фамилия</p>
+    <input tabindex="2" required type="text" name="surname" placeholder="Фамилия">
+</div>
+<div>
+    <p>Телефон</p>
+    <input tabindex="3" type="tel" name="phone" placeholder="Номер телефона">
+</div>
+<div>
+    <p>Год рождения</p>
+    <select tabindex="4" name="age">
+        <option value="1993">1993</option>
+        <option value="1994">1994</option>
+        <option value="1995">1995</option>
+        <option value="1996">1996</option>
+        <option value="1997">1997</option>
+        <option selected value="1998">1998</option>
+        <option value="1999">1999</option>
+        <option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+    </select>
+</div>
+<div>
+<P>Электронная почта</P>
+<input tabindex="5" required type="text" name="mail" placeholder="E-mail">
+</div>
+
+<div>
+    <p>Имеете ли вы опыт работы в данной сфере?</p>
+    <input tabindex="6" type="radio" name="experience" value="Yes">Да
+    <input tabindex="6" type="radio" name="experience" value="No"> Нет
+</div>
+<div>
+    <p>Какое образование вы получили?</p>
+    <p><input tabindex="7" disabled checked type="checkbox" name="education" value="school">Среднее</p>
+    <p><input tabindex="7" type="checkbox" name="education" value="college">Неполное высшее</p>
+    <p><input tabindex="7" type="checkbox" name="education" value="university">Бакалавр</p>
+    <p><input tabindex="7" type="checkbox" name="education" value="master">Магистр</p>
+</div>
+<div>
+    <p>Какие 5 предметов ты возьмешь с собой на необитаемый остров?</p>
+    <textarea tabindex="8" name="tools" placeholder="Перечислите предметы"></textarea>
+</div>
+<div>
+    <p>Какими качествами вы владеете?</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="1">Порядочность</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="2">Коммуникабельность</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="3">Таймменеджмент</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="4">Независимость</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="5">Критическое мышление</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="6">Умение анализировать</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="7">Дружелюбность</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="8">Настойчивость</p>
+    <p><input tabindex="9" type="checkbox" name="skills" value="9">Другое: <input type="text" name="other"></p>
+</div>
+<div>
+    <p>Прикрепите свое резюме</p>
+    <input tabindex="10" type="file" name="resume">
+</div>
+<br>
+<div>
+    <button tabindex="11" type="submit">Отправить</button>
+    <button tabindex="11" type="reset">Очистить</button>
+</div>
+</form>
+</body>
+</html>
